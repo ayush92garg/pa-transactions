@@ -1,0 +1,43 @@
+{
+  "name": "node-express-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build && node dist/index.js",
+    "build": "babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayush92garg/node-express-boilerplate.git"
+  },
+  "author": "Ayush Garg <think.ayushgarg@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ayush92garg/node-express-boilerplate/issues"
+  },
+  "homepage": "https://github.com/ayush92garg/node-express-boilerplate#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "knex": "^0.21.6",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "redis": "^3.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^7.11.0",
+    "eslint-config-google": "^0.14.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  }
+}
