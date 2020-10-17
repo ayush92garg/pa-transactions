@@ -1,4 +1,8 @@
-const mysql = require('mysql');
+/**
+ * @module data-adaptors/mysql
+ */
+
+const mysql= require('mysql');
 const Knex = require('knex');
 
 const credentials = {

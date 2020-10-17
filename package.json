@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run build && node dist/index.js",
-    "build": "babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files"
+    "start": "node bin/www.js",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -19,7 +18,10 @@
   },
   "homepage": "https://github.com/ayush92garg/node-express-boilerplate#readme",
   "dependencies": {
+    "async": "^3.2.0",
     "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
     "express": "^4.17.1",
     "http": "0.0.1-security",
     "knex": "^0.21.6",
@@ -28,16 +30,7 @@
     "redis": "^3.0.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.11.6",
-    "@babel/preset-env": "^7.11.5",
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
     "eslint": "^7.11.0",
     "eslint-config-google": "^0.14.0"
-  },
-  "babel": {
-    "presets": [
-      "@babel/preset-env"
-    ]
   }
 }
