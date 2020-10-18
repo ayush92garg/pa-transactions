@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/ayush92garg/node-express-boilerplate#readme",
   "dependencies": {
-    "async": "^3.2.0",
     "body-parser": "^1.19.0",
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
@@ -27,7 +26,6 @@
     "knex": "^0.21.6",
     "morgan": "^1.10.0",
     "mysql": "^2.18.1",
-    "redis": "^3.0.2"
   },
   "devDependencies": {
     "eslint": "^7.11.0",
