@@ -1,8 +1,6 @@
-const { forEach } = require('async');
 const TRANSACTIONS = require('./../models/transactions');
 
 module.exports = async (req, res, next) => {
-    console.log('called2');
     const transactionType = req.params.transactionType;
 
     dataFromModel = await TRANSACTIONS.getByType(transactionType);

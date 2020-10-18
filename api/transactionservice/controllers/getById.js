@@ -1,7 +1,6 @@
 const TRANSACTIONS = require('./../models/transactions');
 
 module.exports = async (req, res, next) => {
-    console.log('called1');
     let transactionId = req.params.transactionId;
 
     if (transactionId) {
