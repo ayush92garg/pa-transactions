@@ -76,9 +76,10 @@ async function getById(transactionId) {
         };
     } else {
         try {
-            result.rows = await knex(config.TABLES.TRANSACTIONS).where({
+            const row = await knex(config.TABLES.TRANSACTIONS).where({
                 transaction_id: transactionId,
-            }).first();
+            });
+            if (row.length) result.rows = row[0];
         } catch (e) {
             result.err = e;
         }
